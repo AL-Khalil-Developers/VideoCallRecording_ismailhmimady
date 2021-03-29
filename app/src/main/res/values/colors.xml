@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_progress_color">#ff6c6d6d</color>
+    <color name="background_video_color">#ff2f3031</color>
+    <color name="black">#ff000000</color>
+    <color name="black_translucent">#50000000</color>
+
+
+    <color name="colorAccent">#ffe85e1a</color>
+    <color name="colorPrimary">#ffe85e1a</color>
+    <color name="colorPrimaryDark">#ffee9469</color>
+
+    <color name="design_default_color_primary">#ff3f51b5</color>
+    <color name="design_default_color_primary_dark">#ff303f9f</color>
+
+
+    <color name="line_button">#ff565758</color>
+    <color name="line_color">#ff15ff00</color>
+
+
+    <color name="progress_color">@color/colorPrimary</color>
+
+    <color name="shadow_color">#ff000000</color>
+
+    <color name="white">#ffffffff</color>
+</resources>

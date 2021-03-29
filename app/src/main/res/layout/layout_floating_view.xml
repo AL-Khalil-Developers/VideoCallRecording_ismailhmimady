@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/collapsed_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_service_collapsed"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:src="@drawable/ic_android_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/image_close_service"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="@+id/image_service_collapsed"
+            app:layout_constraintTop_toTopOf="@+id/image_service_collapsed"
+            android:contentDescription="TODO" />
+
+        <Chronometer
+            android:id="@+id/txt_counter"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:background="@drawable/audio_counter_background"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_service_collapsed" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/expanded_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_service_expanded"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:src="@drawable/ic_android_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/image_start_video_recording"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/videorecorder"
+            app:layout_constraintCircle="@+id/image_service_expanded"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="90.0dip"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_capture_screenshot"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/screenshot"
+            app:layout_constraintCircle="@+id/image_service_expanded"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="90.0dip"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_start_audio_recording"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/microphone"
+            app:layout_constraintCircle="@+id/image_service_expanded"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="90.0dip"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_stop_audio_recording"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:src="@drawable/ic_stop_recording"
+            android:visibility="gone"
+            app:layout_constraintCircle="@+id/image_service_expanded"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="90.0dip"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_close_expanded_service"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/cancel"
+            app:layout_constraintCircle="@+id/image_service_expanded"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="90.0dip"
+            android:contentDescription="TODO"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_video_recording_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/image_start_video_recording"
+            app:layout_constraintStart_toStartOf="@+id/image_start_video_recording"
+            app:layout_constraintTop_toBottomOf="@+id/image_start_video_recording" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_screenshot_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/image_capture_screenshot"
+            app:layout_constraintStart_toStartOf="@+id/image_capture_screenshot"
+            app:layout_constraintTop_toBottomOf="@+id/image_capture_screenshot" />
+
+        <TextView
+            android:id="@+id/txt_audio_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_audio_recording_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/image_start_audio_recording"
+            app:layout_constraintStart_toStartOf="@+id/image_start_audio_recording"
+            app:layout_constraintTop_toBottomOf="@+id/image_start_audio_recording" />
+
+        <TextView
+            android:id="@+id/txt_stop_audio_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_stop_audio_recording_text"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/image_stop_audio_recording"
+            app:layout_constraintStart_toStartOf="@+id/image_stop_audio_recording"
+            app:layout_constraintTop_toBottomOf="@+id/image_stop_audio_recording" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_close_expanded_service_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/image_close_expanded_service"
+            app:layout_constraintStart_toStartOf="@+id/image_close_expanded_service"
+            app:layout_constraintTop_toBottomOf="@+id/image_close_expanded_service" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

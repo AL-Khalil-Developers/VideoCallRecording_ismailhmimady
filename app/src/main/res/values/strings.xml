@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video Call Recorder</string>
+
+
+
+    <string name="fb_bnr">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fb_inter">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
+    <string name="accountname">Account+Name</string>
+
+    <string name="privacypolicylink">https://privacy.blogspot.com</string>
+
+
+    <string name="cancel">Cancel</string>
+
+    <string name="kilobyte">KB</string>
+    <string name="label_permissions">Permissions are required</string>
+    <string name="megabyte">MB</string>
+
+    <string name="save">Save</string>
+
+    <string name="short_seconds">sec</string>
+
+    <string name="txt_audio_recording_text">Audio Recording</string>
+    <string name="txt_close_expanded_service_text">Close</string>
+    <string name="txt_screenshot_text">Screenshot</string>
+    <string name="txt_service_status_off">Turn Recording Off</string>
+    <string name="txt_service_status_on">Turn Recording On</string>
+    <string name="txt_stop_audio_recording_text">Stop Recording</string>
+    <string name="txt_video_recording_text">Video Recording</string>
+
+
+</resources>
